@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "queezer"
+version = "0.1.0"
+description = "Queezer is designed to help you start owning your own LLM models by collecting request and response data from API calls."
+authors = ["MLalex <consai.alex@gmail.com>", "JAAVander <git.jonas@vpo.me>"]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+packages = [{include = "queezer", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.3"
+
+[tool.poetry.urls]
+"Source" = "https://github.com/JavAmz/queezer"
+"Issue Tracker" = "https://github.com/JavAmz/queezer/issues"
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.1"
+pytest = "^8.3.3"
+openai = "^1.52.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
